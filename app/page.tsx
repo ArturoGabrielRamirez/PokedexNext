@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 
-export const getData = async () => {
+const getData = async () => {
   const res = await fetch("https://pokeapi.co/api/v2/pokemon/");
   const data = await res.json();
   return data;
