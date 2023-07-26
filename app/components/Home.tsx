@@ -11,8 +11,8 @@ function Home({ details }: { details: any }) {
             {
                 details.map((item: any) => {
                     return (
-                        <div className='card'>
-                            <div key={item.id} className='flex relative rotate-cards-animation'>
+                        <div  key={item.id} className='card'>
+                            <div className='flex relative rotate-cards-animation'>
 
                                 <div className='absolute w-full h-full border-8 border-yellow-200 rounded-md bg-gradient-to-b from-orange-500 shadow-md back -z-10'>
                                     <div >
