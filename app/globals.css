@@ -18,10 +18,32 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.container {
+  perspective: 3000px;
+}
+
+.card:hover .rotate-cards-animation {
+  transform: rotateY(180deg);
+}
+
+.rotate-cards-animation {
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+  z-index: 10;
+}
+
+.rotate-cards-animation .back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.rotate-cards-animation .front {
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+
 }
