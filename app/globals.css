@@ -27,6 +27,10 @@ body {
   perspective: 3000px;
 }
 
+.card {
+  min-height: 356px;
+}
+
 .card:hover .rotate-cards-animation {
   transform: rotateY(180deg);
 }
@@ -35,6 +39,7 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.3s;
   z-index: 10;
+
 }
 
 .rotate-cards-animation .back {
