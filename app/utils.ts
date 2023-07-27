@@ -65,7 +65,7 @@ export const getDetails = async (data: any) => {
         const data = await res.json();
         return data;
     })
-    console.log(result);
+  
     return Promise.all(result);
 }
 

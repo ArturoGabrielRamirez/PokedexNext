@@ -7,6 +7,11 @@ const nextConfig = {
                 hostname: 'raw.githubusercontent.com',
                 port: '',
             },
+            {
+                protocol: 'https',
+                hostname: 'lh3.googleusercontent.com',
+                port: '',
+            }
         ],
     },
 

@@ -4,7 +4,7 @@ import ChipsTypes from './ChipsTypes';
 import { typesColorCards } from '../utils';
 
 function Home({ details }: { details: any }) {
-
+console.log(details)
     return (
         <section className='container grid gap-1 grid-cols-1 sm:grid-cols-2 sm:gap-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-3 xl:grid-cols-5 2xl:grid-cols-6 2xl:gap-4'>
             {

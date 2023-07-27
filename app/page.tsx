@@ -7,7 +7,7 @@ export default async function HomePage() {
   const data = await getData(url);
   const details = await getDetails(data);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex py-6 min-h-screen flex-col items-center justify-between">
 
       <Home details={details} />
 
