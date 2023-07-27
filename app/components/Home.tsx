@@ -3,6 +3,7 @@ import Image from 'next/image'
 import ChipsTypes from './ChipsTypes';
 import { typesColorCards } from '../utils';
 
+
 function Home({ details }: { details: any }) {
 console.log(details)
     return (

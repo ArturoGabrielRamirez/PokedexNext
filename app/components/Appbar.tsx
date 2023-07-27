@@ -15,18 +15,18 @@ const Appbar = () => {
         <header className="flex overflow-hidden">
 
             <div className="w-5/12 h-[160px] bg-red-700 relative  rounded-b-lg ">
-                <div className="flex p-5">
-                    <div className="absolute flex -right-[32px] ">
+                <div className="flex w-full p-5">
+                    <div className="flex justify-between w-full -right-[32px] ">
+                        {sessionBool ? (session && session.user) && <Image className=" rounded-full border-8  border-slate-400 " src={session.user.image as string} alt="pokeball" width={100} height={100} /> : <Image className=" rounded-full border-8 bg-slate-300 border-slate-400" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="pokeball" width={100} height={100} />}
                         {!sessionBool ? <div >
-                            <div className="border-red-600 border-[4px] bg-red-500 w-[32px] h-[32px] rounded-full "></div>
+                            <div className="border-red-600 border-[4px] bg-red-500 md:w-[32px] md:h-[32px] rounded-full "></div>
 
                         </div>
-                            : <div className="flex gap-4 flex-row" >
-                                <div className="border-red-600 border-[4px] bg-red-500 w-[32px] h-[32px] rounded-full"></div>
-                                <div className="border-yellow-600 border-[4px] bg-yellow-500 w-[32px] h-[32px] rounded-full"></div>
-                                <div className="border-green-600 border-[4px] bg-green-500 w-[32px] h-[32px] rounded-full"></div></div>}
+                            : <div className="flex gap-4 flex-col md:flex-row" >
+                                <div className="border-red-600 border-[4px] bg-red-500 md:w-[32px] md:h-[32px] rounded-full"></div>
+                                <div className="border-yellow-600 border-[4px] bg-yellow-500 md:w-[32px] md:h-[32px] rounded-full"></div>
+                                <div className="border-green-600 border-[4px] bg-green-500 md:w-[32px] md:h-[32px] rounded-full"></div></div>}
                     </div>
-                    {sessionBool ? (session && session.user) && <Image className=" rounded-full border-8  border-slate-400 absolute" src={session.user.image as string} alt="pokeball" width={130} height={130} /> : <Image className=" rounded-full border-8 bg-slate-300 absolute border-slate-400" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="pokeball" width={130} height={130} />}
                 </div>
             </div>
 
