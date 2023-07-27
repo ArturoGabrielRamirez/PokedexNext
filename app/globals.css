@@ -52,3 +52,53 @@ body {
   transform: rotateY(0deg);
 
 }
+
+.light-green {
+  animation: neon-glow-green 1.5s 1s ease-in-out forwards;
+}
+
+.light-yellow {
+  animation: neon-glow-yellow 1s ease-in-out forwards;
+}
+
+.light-red {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #f00;
+  background: linear-gradient(90deg, #f00, #ff0000, #f00);
+  box-shadow: 0 0 20px #f00;
+
+}
+
+@keyframes neon-glow-yellow {
+
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #ff0;
+    background: linear-gradient(90deg, #ff0, #fffb00, #ff0);
+    box-shadow: 0 0 20px #ff0;
+  }
+}
+
+@keyframes neon-glow-green {
+
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #0f0;
+    background: linear-gradient(90deg, #0f0, #7cff00, #0f0);
+    box-shadow: 0 0 20px #0f0;
+  }
+}

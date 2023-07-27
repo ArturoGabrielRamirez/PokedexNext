@@ -10,6 +10,8 @@ const Appbar = () => {
     console.log(session)
     let sessionBool = session && session.user ? true : false
 
+    
+
     return (
 
         <header className="flex overflow-hidden">
@@ -19,13 +21,19 @@ const Appbar = () => {
                     <div className="flex justify-between w-full -right-[32px] ">
                         {sessionBool ? (session && session.user) && <Image className=" rounded-full border-8  border-slate-400 " src={session.user.image as string} alt="pokeball" width={100} height={100} /> : <Image className=" rounded-full border-8 bg-slate-300 border-slate-400" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="pokeball" width={100} height={100} />}
                         {!sessionBool ? <div >
-                            <div className="border-red-600 border-[4px] bg-red-500 md:w-[32px] md:h-[32px] rounded-full "></div>
+                            <div className="flex gap-4 flex-col md:flex-row" >
+                                <div className="light-red border-red-800 border-[4px] bg-red-800 md:w-[32px] md:h-[32px] rounded-full"></div>
+                                <div className="border-yellow-800 border-[4px] bg-yellow-800 grayscale-[30%] md:w-[32px] md:h-[32px] rounded-full"></div>
+                                <div className="border-green-800 border-[4px] bg-green-800  grayscale-[30%] md:w-[32px] md:h-[32px] rounded-full"></div>
+                            </div>
 
                         </div>
                             : <div className="flex gap-4 flex-col md:flex-row" >
-                                <div className="border-red-600 border-[4px] bg-red-500 md:w-[32px] md:h-[32px] rounded-full"></div>
-                                <div className="border-yellow-600 border-[4px] bg-yellow-500 md:w-[32px] md:h-[32px] rounded-full"></div>
-                                <div className="border-green-600 border-[4px] bg-green-500 md:w-[32px] md:h-[32px] rounded-full"></div></div>}
+                                <div className="light-red border-red-800 border-[4px] bg-red-800 md:w-[32px] md:h-[32px] rounded-full"></div>
+                                <div className="light-yellow border-yellow-800 border-[4px] bg-yellow-800 md:w-[32px] md:h-[32px] rounded-full"></div>
+                                <div className="light-green border-green-800 border-[4px] bg-green-800 md:w-[32px] md:h-[32px] rounded-full"></div>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
