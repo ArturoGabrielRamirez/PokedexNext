@@ -7,7 +7,7 @@ export default async function HomePage() {
   const data = await getData(url);
   const details = await getDetails(data);
 
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+  
   return (
     <main className="flex py-6 flex-col items-center justify-center">
 
