@@ -14,7 +14,7 @@ const Appbar = () => {
 
         <header className="flex overflow-hidden">
 
-            <div className="w-5/12 h-[160px] bg-red-700 relative  rounded-b-lg ">
+            <div className="w-6/12 h-[160px] bg-red-700 relative">
                 <div className="flex w-full p-5">
                     <div className="flex justify-between w-full -right-[32px] ">
                         {sessionBool ? (session && session.user) && <Image className=" rounded-full border-8  border-slate-400 " src={session.user.image as string} alt="pokeball" width={100} height={100} /> : <Image className=" rounded-full border-8 bg-slate-300 border-slate-400" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="pokeball" width={100} height={100} />}
@@ -30,7 +30,7 @@ const Appbar = () => {
                 </div>
             </div>
 
-            <div className="flex-col w-7/12 h-50">
+            <div className="flex-col w-6/12 h-50">
                 <div className="h-1/2 bg-red-700">
                     <div className=" absolute p-2 right-3 top-3">
                         <SigninButton />

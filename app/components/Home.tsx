@@ -5,7 +5,7 @@ import { typesColorCards } from '../utils';
 
 
 function Home({ details }: { details: any }) {
-console.log(details)
+    console.log(details)
     return (
         <section className='container grid gap-1 grid-cols-1 sm:grid-cols-2 sm:gap-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-3 xl:grid-cols-5 2xl:grid-cols-6 2xl:gap-4'>
             {
@@ -18,7 +18,7 @@ console.log(details)
 
                                 <div className={`flex flex-col  h-full w-full border-8 border-yellow-200 rounded-md bg-gradient-to-b ${color} front`} >
 
-                                    <div className={`m-2 border-2 border-amber-300 rounded-sm bg-gradient-to-b ${color}`} >
+                                    <div className={`flex m-2 border-2 border-amber-300 rounded-sm bg-gradient-to-b justify-center ${color}`} >
                                         <Image src={item.sprites.front_default} alt={item.name} width={200} height={200} />
                                     </div>
                                     <div className={`p-2 grow bg-gradient-to-t ${color}`}>
