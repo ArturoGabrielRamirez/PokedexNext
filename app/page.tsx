@@ -9,9 +9,7 @@ export default async function HomePage() {
 
   return (
     <main className="flex py-6 flex-col items-center justify-center">
-
       <Home details={details} />
-
     </main >
   )
 }

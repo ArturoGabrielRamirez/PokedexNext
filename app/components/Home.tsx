@@ -13,7 +13,7 @@ function Home({ details }: { details: any }) {
                     let color = typesColorCards[item.types[0].type.name]
 
                     return (
-                        <div key={item.id} className='card group'>
+                        <div key={item.id} className='card group max-w-[247px]'>
                             <div className='flex relative rotate-cards-animation w-full h-full'>
 
                                 <div className={`flex flex-col  h-full w-full border-8 border-yellow-200 rounded-md bg-gradient-to-b ${color} front`} >
