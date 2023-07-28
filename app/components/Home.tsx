@@ -16,9 +16,9 @@ function Home({ details }: { details: any }) {
                         <div key={item.id} className='card group max-w-[247px]'>
                             <div className='flex relative rotate-cards-animation w-full h-full'>
 
-                                <div className={`flex flex-col  h-full w-full border-8 border-yellow-200 rounded-md bg-gradient-to-b ${color} front`} >
+                                <div className={`flex flex-col  h-full w-full border-8 border-yellow-200 rounded-md bg-gradient-to-b ${color} shadow-sm shadow-yellow-500 front`} >
 
-                                    <div className={`flex m-2 border-2 border-amber-300 rounded-sm bg-gradient-to-b justify-center ${color}`} >
+                                    <div className={`flex m-2 border-2 border-amber-300 rounded-sm bg-gradient-to-b justify-center ${color} shadow-sm shadow-amber-400`} >
                                         <Image src={item.sprites.front_default} alt={item.name} width={200} height={200} />
                                     </div>
                                     <div className={`p-2 grow bg-gradient-to-t ${color}`}>
@@ -29,7 +29,7 @@ function Home({ details }: { details: any }) {
                                     </div>
                                 </div>
 
-                                <div className={` absolute w-full h-full border-8 border-yellow-200 rounded-md bg-gradient-to-b ${color} back -z-10`}>
+                                <div className={` absolute w-full h-full border-8 border-yellow-200 rounded-md bg-gradient-to-b ${color} shadow-sm shadow-yellow-500 back -z-10`}>
 
                                     <div className={`flex items-center justify-center w-full h-full bg-gradient-to-t ${color}`}>
                                         <div className='relative flex flex-col justify-center items-center group-hover:animate-bounce'>

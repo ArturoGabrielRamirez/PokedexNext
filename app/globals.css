@@ -61,24 +61,24 @@ body {
   animation: neon-glow-yellow 1s ease-in-out forwards;
 }
 
+.light-blue {
+  animation: neon-glow-blue 2s 0.5s ease-in-out normal;
+}
+
 .light-red {
- 
   color: #fff;
   text-align: center;
   border: 2px solid #f00;
   background: linear-gradient(90deg, #f00, #ff0000, #f00);
   box-shadow: 0 0 20px #f00;
-
 }
 
 @keyframes neon-glow-yellow {
-
   0% {
     opacity: 0.1;
   }
 
   100% {
-    
     color: #fff;
     text-align: center;
     border: 2px solid #ff0;
@@ -88,17 +88,47 @@ body {
 }
 
 @keyframes neon-glow-green {
-
   0% {
     opacity: 0.1;
   }
 
   100% {
-    
     color: #fff;
     text-align: center;
     border: 2px solid #0f0;
     background: linear-gradient(90deg, #0f0, #7cff00, #0f0);
     box-shadow: 0 0 20px #0f0;
+  }
+}
+
+@keyframes neon-glow-blue {
+
+  0% {
+    opacity: 0.7;
+    filter: invert(100%);
+  }
+
+  30% {
+    opacity: 0.3;
+    filter: invert(10%);
+  }
+
+  50% {
+    opacity: 0.7;
+    filter: invert(60%);
+  }
+
+  70% {
+    opacity: 0.3;
+    filter: invert(10%);
+  }
+
+  100% {
+        opacity: 0.1;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #00fffb;
+    background: linear-gradient(90deg, #00fffb, #67b8f9, #00fffb);
+    box-shadow: 0 0 20px #00fffb;
   }
 }
