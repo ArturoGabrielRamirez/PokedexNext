@@ -22,9 +22,9 @@ const Appbar = () => {
                         {sessionBool
                             ? (session && session.user) &&
                             <div className="m-3 border-2 border-black outline-8 outline outline-white rounded-full">
-                                
+
                                 <Image className="light-blue rounded-full shadow-xl shadow-[#67b8f9] bg-[#67b8f9]  p-[4px]" src={session.user.image as string} alt="pokeball" width={100} height={100} />
-                                
+
                             </div>
                             :
                             <div className="m-3 border-2 border-black outline-8 outline outline-white rounded-full">
